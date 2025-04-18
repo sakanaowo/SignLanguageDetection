@@ -63,4 +63,4 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
 
 draw_landmarks(frame, results)
 plt.imshow(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-plt.show()
+# plt.show()
