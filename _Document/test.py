@@ -26,9 +26,9 @@ def draw_landmarks(image, results):
 
 
 def draw_styled_landmarks(image, results):
-    # mp_drawing.draw_landmarks(image, results.face_landmarks, mp_holistic.FACEMESH_CONTOURS,
-    #                           mp_drawing.DrawingSpec(color=(80, 110, 10), thickness=1, circle_radius=1),
-    #                           mp_drawing.DrawingSpec(color=(80, 256, 121), thickness=1, circle_radius=1))
+    mp_drawing.draw_landmarks(image, results.face_landmarks, mp_holistic.FACEMESH_CONTOURS,
+                              mp_drawing.DrawingSpec(color=(80, 110, 10), thickness=1, circle_radius=1),
+                              mp_drawing.DrawingSpec(color=(80, 256, 121), thickness=1, circle_radius=1))
     mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_holistic.POSE_CONNECTIONS,
                               mp_drawing.DrawingSpec(color=(80, 22, 10), thickness=2, circle_radius=4),
                               mp_drawing.DrawingSpec(color=(80, 44, 121), thickness=2, circle_radius=2))
