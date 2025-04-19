@@ -27,3 +27,8 @@ ACTIONS = config['ACTIONS']
 SEQUENCE_LENGTH = config['SEQUENCE_LENGTH']
 NO_SEQUENCES = config['NO_SEQUENCES']
 DATA_PATH = config['DATA_PATH']
+
+# if __name__ == '__main__':
+#     print(ACTIONS)
+#     print(SEQUENCE_LENGTH)
+#     print(NO_SEQUENCES)
