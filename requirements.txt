@@ -1,0 +1,7 @@
+tensorflow~=2.19.0
+opencv-python~=4.11.0.86
+numpy~=1.26.4
+mediapipe~=0.10.21
+scikit-learn~=1.6.1
+matplotlib~=3.10.0
+setuptools~=72.1.0
