@@ -13,7 +13,7 @@ Build a human action recognition system from webcam using:
 |------|-----------------------------------|-----------------------|
 | 1    | Collect data from webcam          | `src/data_collection` |
 | 2    | Automatic save `.npy` key points  | `data/raw/ <action>`  |
-| 3    | Autoupdate `ACTIONS`              |                       |
+| 3    | Autoupdate `ACTIONS`              | `src/config`          |
 | 4    | Preprocess data into `X,y`        | `src/preprocess`      |
 | 5    | Build and train model (`LSTM`)    | `src/model`           |
 | 6    | Save model `.h5`                  | `models`              |
