@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SignLanguageDetection.iml" filepath="$PROJECT_DIR$/.idea/SignLanguageDetection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ActionDetection.iml" filepath="$PROJECT_DIR$/.idea/ActionDetection.iml" />
     </modules>
   </component>
 </project>

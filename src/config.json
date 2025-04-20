@@ -1,8 +1,5 @@
 {
   "ACTIONS": [
-    "hello",
-    "thanks",
-    "iloveyou",
     "hi"
   ],
   "SEQUENCE_LENGTH": 30,
