@@ -1,8 +1,8 @@
 {
-  "ACTIONS": [
-    "hi"
-  ],
-  "SEQUENCE_LENGTH": 30,
-  "NO_SEQUENCES": 30,
-  "DATA_PATH": "../data/raw"
+    "ACTIONS": [
+        "hi"
+    ],
+    "SEQUENCE_LENGTH": 30,
+    "NO_SEQUENCES": 30,
+    "DATA_PATH": "../data/raw"
 }
