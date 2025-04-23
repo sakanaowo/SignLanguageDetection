@@ -1,6 +1,7 @@
 {
     "ACTIONS": [
-        "hi"
+        "hi",
+        "raise hand"
     ],
     "SEQUENCE_LENGTH": 30,
     "NO_SEQUENCES": 30,
