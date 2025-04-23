@@ -19,6 +19,7 @@
 # NUM_KEYPOINTS = 1662
 """load config"""
 import json
+from pathlib import Path
 
 with open('config.json', 'r') as f:
     config = json.load(f)
@@ -26,9 +27,5 @@ with open('config.json', 'r') as f:
 ACTIONS = config['ACTIONS']
 SEQUENCE_LENGTH = config['SEQUENCE_LENGTH']
 NO_SEQUENCES = config['NO_SEQUENCES']
-DATA_PATH = config['DATA_PATH']
+DATA_PATH = (Path(__file__).parent / config['DATA_PATH']).resolve()
 
-# if __name__ == '__main__':
-#     print(ACTIONS)
-#     print(SEQUENCE_LENGTH)
-#     print(NO_SEQUENCES)
