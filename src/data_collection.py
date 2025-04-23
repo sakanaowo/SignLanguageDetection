@@ -15,16 +15,18 @@ def add_new_action(action_name, config_path='config.json'):
         config_data = json.load(f)
         if action_name in config_data['ACTIONS']:
             print(f"'{action_name}' already exists in ACTIONS.")
-            return
+            return False
         config_data['ACTIONS'].append(action_name)
         f.seek(0)
         json.dump(config_data, f, indent=4)
         f.truncate()
     print(f"'{action_name}' has been added to config.json ACTIONS list.")
+    return True
 
 
 def collect_data(actions, no_sequences=config.NO_SEQUENCES, sequence_length=config.SEQUENCE_LENGTH,
                  data_path=config.DATA_PATH):
+    print("Collecting data into:", config.DATA_PATH)
     for action in actions:
         for sequence in range(no_sequences):
             os.makedirs(os.path.join(data_path, action, str(sequence)), exist_ok=True)
