@@ -23,7 +23,6 @@ def add_new_action(action_name, config_path='config.json'):
     print(f"'{action_name}' has been added to config.json ACTIONS list.")
     return True
 
-
 def collect_data(actions, no_sequences=config.NO_SEQUENCES, sequence_length=config.SEQUENCE_LENGTH,
                  data_path=config.DATA_PATH):
     print("Collecting data into:", config.DATA_PATH)

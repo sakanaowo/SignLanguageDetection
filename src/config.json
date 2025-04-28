@@ -1,6 +1,22 @@
 {
     "ACTIONS": [
-        "hi"
+        "hi",
+        "Hello",
+        "Bye",
+        "Nice to meet you",
+        "Thank you",
+        "You",
+        "Me or I",
+        "My",
+        "Your",
+        "Name",
+        "Hearing",
+        "Hard of hearing",
+        "Yes",
+        "No",
+        "Where?",
+        "Where",
+        "What"
     ],
     "SEQUENCE_LENGTH": 30,
     "NO_SEQUENCES": 30,
