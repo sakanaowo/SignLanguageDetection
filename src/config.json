@@ -1,7 +1,19 @@
 {
     "ACTIONS": [
         "hi",
-        "raise hand"
+        "raise hand",
+        "waving hand",
+        "fist",
+        "nodding",
+        "shaking head",
+        "thumbs up",
+        "open hand",
+        "praying",
+        "scratching head",
+        "clap hands",
+        "tongue out",
+        "pinching nose",
+        "shushing gesture"
     ],
     "SEQUENCE_LENGTH": 30,
     "NO_SEQUENCES": 30,
