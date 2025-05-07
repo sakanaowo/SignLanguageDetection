@@ -1,8 +1,34 @@
 {
-  "ACTIONS": [
-    "hi"
-  ],
-  "SEQUENCE_LENGTH": 30,
-  "NO_SEQUENCES": 30,
-  "DATA_PATH": "../data/raw"
+    "ACTIONS": [
+        "Bye",
+        "Hard of hearing",
+        "Hearing",
+        "Hello",
+        "Me or I",
+        "My",
+        "Name",
+        "Nice to meet you",
+        "No",
+        "Thank you",
+        "What",
+        "Where",
+        "Yes",
+        "You",
+        "Your",
+        "clap hands",
+        "fist",
+        "hi",
+        "nodding",
+        "open hand",
+        "pinching nose",
+        "praying",
+        "scratching head",
+        "shaking head",
+        "shushing gesture",
+        "thumbs up",
+        "tongue out"
+    ],
+    "SEQUENCE_LENGTH": 30,
+    "NO_SEQUENCES": 30,
+    "DATA_PATH": "data/raw"
 }

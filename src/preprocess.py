@@ -19,7 +19,8 @@ def preprocess_data(config_path='src/config.json', save=True):
     sequences, labels = [], []
 
     for action in actions:
-        action_path = os.path.join(data_path, action)
+        # action_path = os.path.join(data_path, action)
+        action_path = os.path.join(os.getcwd(), data_path, action)
         for sequence in np.array(os.listdir(action_path)).astype(int):
             window = []
             for frame_num in range(sequence_length):
