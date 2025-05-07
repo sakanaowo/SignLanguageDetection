@@ -28,4 +28,6 @@ ACTIONS = config['ACTIONS']
 SEQUENCE_LENGTH = config['SEQUENCE_LENGTH']
 NO_SEQUENCES = config['NO_SEQUENCES']
 DATA_PATH = Path(__file__).parent / config['DATA_PATH']
+X_TEST = Path(__file__).parent / config['X_TEST']
+Y_TEST = Path(__file__).parent / config['Y_TEST']
 
