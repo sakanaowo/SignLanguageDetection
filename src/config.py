@@ -27,5 +27,5 @@ with open('config.json', 'r') as f:
 ACTIONS = config['ACTIONS']
 SEQUENCE_LENGTH = config['SEQUENCE_LENGTH']
 NO_SEQUENCES = config['NO_SEQUENCES']
-DATA_PATH = (Path(__file__).parent / config['DATA_PATH']).resolve()
+DATA_PATH = Path(__file__).parent / config['DATA_PATH']
 
