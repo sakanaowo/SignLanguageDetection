@@ -1,35 +1,10 @@
 {
     "ACTIONS": [
-        "Bye",
-        "Hard of hearing",
-        "Hearing",
-        "Hello",
-        "Me or I",
-        "My",
-        "Name",
-        "Nice to meet you",
-        "No",
-        "Thank you",
-        "What",
-        "Where",
-        "Yes",
-        "You",
-        "Your",
-        "clap hands",
-        "fist",
-        "nodding",
-        "open hand",
-        "pinching nose",
-        "praying",
-        "scratching head",
-        "shaking head",
-        "shushing gesture",
-        "thumbs up",
-        "tongue out"
+        "Nope"
     ],
     "SEQUENCE_LENGTH": 30,
     "NO_SEQUENCES": 30,
-    "DATA_PATH": "data/raw",
-    "X_TEST": "data/processed/X_test.npy",
-    "Y_TEST": "data/processed/y_test.npy"
+    "DATA_PATH": "../data/raw",
+    "X_TEST": "../data/processed/X_test.npy",
+    "Y_TEST": "../data/processed/y_test.npy"
 }

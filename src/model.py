@@ -4,19 +4,6 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.models import load_model
 
-
-# def build_model(input_shape, output_dim):
-#     model = Sequential()
-#     model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=input_shape))
-#     model.add(LSTM(128, return_sequences=True, activation='relu'))
-#     model.add(LSTM(64, return_sequences=False, activation='relu'))
-#     model.add(Dense(64, activation='relu'))
-#     model.add(Dense(32, activation='relu'))
-#     model.add(Dense(output_dim, activation='softmax'))
-#
-#     model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
-#     return model
-
 def build_model(input_shape, output_dim):
     model = Sequential()
 
