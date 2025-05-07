@@ -22,7 +22,7 @@ import json
 from pathlib import Path
 
 config_path = Path(__file__).resolve().parent / 'config.json'
-with open('config.json', 'r') as f:
+with open(config_path, 'r') as f:
     config = json.load(f)
 
 ACTIONS = config['ACTIONS']
