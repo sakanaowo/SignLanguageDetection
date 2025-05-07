@@ -7,7 +7,7 @@ from src import config
 import mediapipe as mp
 
 # Load model
-model = tf.keras.models.load_model('../models/action_model.h5')
+model = tf.keras.models.load_model('../models/action_model.keras')
 
 # Load actions list from config
 ACTIONS = config.ACTIONS

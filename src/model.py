@@ -49,7 +49,7 @@ def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
     # model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test))
 
     checkpoint = ModelCheckpoint(
-        filepath="models/action_model.h5",
+        filepath="models/action_model.keras",
         monitor='val_loss',
         save_best_only=True,
         save_weights_only=False,
@@ -63,10 +63,10 @@ def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
         callbacks=[early_stopping, checkpoint]
     )
     # model.save("models/action_model.h5")
-    print("Model trained and saved to models/action_model.h5")
+    print("Model trained and saved to models/action_model.keras")
 
 
-def load_trained_model(model_path="../models/action_model.h5"):
+def load_trained_model(model_path="../models/action_model.keras"):
     """
     Load a trained Keras model from .h5 file.
 
