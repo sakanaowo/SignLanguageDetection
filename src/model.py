@@ -1,7 +1,7 @@
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional, LayerNormalization
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.models import load_model
 
 
@@ -47,16 +47,23 @@ def build_model(input_shape, output_dim):
 def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
     early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
     # model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test))
+
+    checkpoint = ModelCheckpoint(
+        filepath="models/action_model.h5",
+        monitor='val_loss',
+        save_best_only=True,
+        save_weights_only=False,
+        verbose=1
+    )
+
     model.fit(
         X_train, y_train,
         epochs=epochs,
         validation_data=(X_test, y_test),
-        callbacks=[early_stopping]
+        callbacks=[early_stopping, checkpoint]
     )
-    model.save("models/action_model.h5")
+    # model.save("models/action_model.h5")
     print("Model trained and saved to models/action_model.h5")
-
-
 
 
 def load_trained_model(model_path="../models/action_model.h5"):
