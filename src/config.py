@@ -21,6 +21,7 @@
 import json
 from pathlib import Path
 
+config_path = Path(__file__).resolve().parent / 'config.json'
 with open('config.json', 'r') as f:
     config = json.load(f)
 
@@ -30,4 +31,3 @@ NO_SEQUENCES = config['NO_SEQUENCES']
 DATA_PATH = Path(__file__).parent / config['DATA_PATH']
 X_TEST = Path(__file__).parent / config['X_TEST']
 Y_TEST = Path(__file__).parent / config['Y_TEST']
-
