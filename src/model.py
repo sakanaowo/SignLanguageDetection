@@ -2,6 +2,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional, LayerNormalization
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.models import load_model
+
 
 # def build_model(input_shape, output_dim):
 #     model = Sequential()
@@ -42,7 +44,6 @@ def build_model(input_shape, output_dim):
     return model
 
 
-
 def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
     early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
     # model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test))
@@ -54,3 +55,24 @@ def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
     )
     model.save("models/action_model.h5")
     print("Model trained and saved to models/action_model.h5")
+
+
+
+
+def load_trained_model(model_path="../models/action_model.h5"):
+    """
+    Load a trained Keras model from .h5 file.
+
+    Args:
+        model_path (str): Path to the saved model file.
+
+    Returns:
+        keras.Model: The loaded model.
+    """
+    try:
+        model = load_model(model_path)
+        print(f"Model loaded successfully from '{model_path}'")
+        return model
+    except Exception as e:
+        print(f"Error loading model: {e}")
+        return None
