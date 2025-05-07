@@ -3,7 +3,6 @@ from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional, LayerNo
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.models import load_model
-from tensorflow.python.keras.callbacks import ReduceLROnPlateau, TensorBoard
 
 
 # def build_model(input_shape, output_dim):
@@ -17,17 +16,19 @@ from tensorflow.python.keras.callbacks import ReduceLROnPlateau, TensorBoard
 #
 #     model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
 #     return model
+
 def build_model(input_shape, output_dim):
     model = Sequential()
-    model.add(Bidirectional(LSTM(64, return_sequences=True, activation='tanh', recurrent_dropout=0.2), input_shape=input_shape))
+
+    model.add(Bidirectional(LSTM(64, return_sequences=True, activation='tanh'), input_shape=input_shape))
     model.add(Dropout(0.3))
     model.add(LayerNormalization())
 
-    model.add(Bidirectional(LSTM(128, return_sequences=True, activation='tanh', recurrent_dropout=0.2)))
+    model.add(Bidirectional(LSTM(128, return_sequences=True, activation='tanh')))
     model.add(Dropout(0.3))
     model.add(LayerNormalization())
 
-    model.add(Bidirectional(LSTM(64, return_sequences=False, activation='tanh', recurrent_dropout=0.2)))
+    model.add(Bidirectional(LSTM(64, return_sequences=False, activation='tanh')))
     model.add(Dropout(0.3))
 
     model.add(Dense(64, activation='relu'))
@@ -45,22 +46,25 @@ def build_model(input_shape, output_dim):
 
 def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
     early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
-    reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=5, min_lr=1e-6, verbose=1)
-    checkpoint = ModelCheckpoint(filepath="models/action_model.keras",
-                                 monitor='val_loss',
-                                 save_best_only=True,
-                                 save_weights_only=False,
-                                 verbose=1)
-    tensorboard_cb = TensorBoard(log_dir="logs", histogram_freq=1)
+    # model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test))
 
-    model.fit(X_train, y_train,
-              epochs=epochs,
-              batch_size=32,
-              validation_data=(X_test, y_test),
-              shuffle=True,
-              callbacks=[early_stopping, checkpoint, reduce_lr, tensorboard_cb])
+    checkpoint = ModelCheckpoint(
+        filepath="models/action_model.keras",
+        monitor='val_loss',
+        save_best_only=True,
+        save_weights_only=False,
+        verbose=1
+    )
 
+    model.fit(
+        X_train, y_train,
+        epochs=epochs,
+        validation_data=(X_test, y_test),
+        callbacks=[early_stopping, checkpoint]
+    )
+    # model.save("models/action_model.h5")
     print("Model trained and saved to models/action_model.keras")
+
 
 def load_trained_model(model_path="models/action_model.keras"):
     """
