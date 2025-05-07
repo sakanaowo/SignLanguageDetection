@@ -1,19 +1,46 @@
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
+from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional, LayerNormalization
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
 
+# def build_model(input_shape, output_dim):
+#     model = Sequential()
+#     model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=input_shape))
+#     model.add(LSTM(128, return_sequences=True, activation='relu'))
+#     model.add(LSTM(64, return_sequences=False, activation='relu'))
+#     model.add(Dense(64, activation='relu'))
+#     model.add(Dense(32, activation='relu'))
+#     model.add(Dense(output_dim, activation='softmax'))
+#
+#     model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
+#     return model
 
 def build_model(input_shape, output_dim):
     model = Sequential()
-    model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=input_shape))
-    model.add(LSTM(128, return_sequences=True, activation='relu'))
-    model.add(LSTM(64, return_sequences=False, activation='relu'))
+
+    model.add(Bidirectional(LSTM(64, return_sequences=True, activation='tanh'), input_shape=input_shape))
+    model.add(Dropout(0.3))
+    model.add(LayerNormalization())
+
+    model.add(Bidirectional(LSTM(128, return_sequences=True, activation='tanh')))
+    model.add(Dropout(0.3))
+    model.add(LayerNormalization())
+
+    model.add(Bidirectional(LSTM(64, return_sequences=False, activation='tanh')))
+    model.add(Dropout(0.3))
+
     model.add(Dense(64, activation='relu'))
+    model.add(Dropout(0.2))
     model.add(Dense(32, activation='relu'))
     model.add(Dense(output_dim, activation='softmax'))
 
-    model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
+    optimizer = Adam(learning_rate=0.001)
+    model.compile(optimizer=optimizer,
+                  loss='categorical_crossentropy',
+                  metrics=['categorical_accuracy'])
+
     return model
+
 
 
 def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
