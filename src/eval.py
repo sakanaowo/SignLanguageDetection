@@ -33,6 +33,6 @@ def evaluate_model(model, X_test, y_test, class_names=None):
 if __name__ == "__main__":
     model = load_trained_model()
     class_names = config['ACTIONS']
-    X_TEST = config['X_TEST']
-    Y_TEST = config['Y_TEST']
+    X_TEST = np.load(config['X_TEST'])
+    Y_TEST = np.load(config['Y_TEST'])
     evaluate_model(model, X_TEST, Y_TEST, class_names)

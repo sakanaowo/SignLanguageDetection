@@ -66,7 +66,7 @@ def train_model(model, X_train, y_train, X_test, y_test, epochs=100):
     print("Model trained and saved to models/action_model.keras")
 
 
-def load_trained_model(model_path="../models/action_model.keras"):
+def load_trained_model(model_path="models/action_model.keras"):
     """
     Load a trained Keras model from .h5 file.
 
