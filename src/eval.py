@@ -14,15 +14,22 @@ def evaluate_model(model, X_test, y_test, class_names=None):
     y_pred = np.argmax(y_pred_probs, axis=1)
     y_true = np.argmax(y_test, axis=1)
 
+    # Xác định số lớp thực tế
+    labels = sorted(np.unique(y_true))
+    # Cập nhật class_names nếu được cung cấp
+    if class_names is not None:
+        class_names = [class_names[i] for i in labels]
+
     # Báo cáo phân loại
     print("Classification Report:")
-    print(classification_report(y_true, y_pred, target_names=class_names))
+    print(classification_report(y_true, y_pred, labels=labels, target_names=class_names))
 
     # Ma trận nhầm lẫn
-    cm = confusion_matrix(y_true, y_pred)
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
-                xticklabels=class_names, yticklabels=class_names)
+                xticklabels=class_names if class_names else labels,
+                yticklabels=class_names if class_names else labels)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.title('Confusion Matrix')

@@ -1,0 +1,187 @@
+Epoch 1/100
+I0000 00:00:1746604863.344068    4762 cuda_dnn.cc:529] Loaded cuDNN version 90300
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 23ms/step - categorical_accuracy: 0.0487 - loss: 3.1876
+Epoch 1: val_loss improved from inf to 2.80462, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 12s 71ms/step - categorical_accuracy: 0.0529 - loss: 3.1762 - val_categorical_accuracy: 0.2051 - val_loss: 2.8046
+Epoch 2/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 21ms/step - categorical_accuracy: 0.1838 - loss: 2.7412
+Epoch 2: val_loss improved from 2.80462 to 2.43472, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 30ms/step - categorical_accuracy: 0.1853 - loss: 2.7329 - val_categorical_accuracy: 0.2051 - val_loss: 2.4347
+Epoch 3/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 21ms/step - categorical_accuracy: 0.2164 - loss: 2.3919
+Epoch 3: val_loss improved from 2.43472 to 2.18886, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 29ms/step - categorical_accuracy: 0.2177 - loss: 2.3873 - val_categorical_accuracy: 0.1795 - val_loss: 2.1889
+Epoch 4/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 21ms/step - categorical_accuracy: 0.2808 - loss: 2.1560
+Epoch 4: val_loss improved from 2.18886 to 2.01887, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 28ms/step - categorical_accuracy: 0.2836 - loss: 2.1505 - val_categorical_accuracy: 0.2051 - val_loss: 2.0189
+Epoch 5/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.2996 - loss: 2.0171
+Epoch 5: val_loss improved from 2.01887 to 1.78864, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.3026 - loss: 2.0092 - val_categorical_accuracy: 0.3077 - val_loss: 1.7886
+Epoch 6/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.3335 - loss: 1.8241
+Epoch 6: val_loss improved from 1.78864 to 1.72873, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.3369 - loss: 1.8233 - val_categorical_accuracy: 0.3077 - val_loss: 1.7287
+Epoch 7/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.3737 - loss: 1.8010
+Epoch 7: val_loss improved from 1.72873 to 1.52681, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.3755 - loss: 1.7951 - val_categorical_accuracy: 0.3590 - val_loss: 1.5268
+Epoch 8/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.4529 - loss: 1.6285
+Epoch 8: val_loss improved from 1.52681 to 1.49072, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.4519 - loss: 1.6256 - val_categorical_accuracy: 0.4359 - val_loss: 1.4907
+Epoch 9/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.4944 - loss: 1.4472
+Epoch 9: val_loss improved from 1.49072 to 1.25254, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 27ms/step - categorical_accuracy: 0.4926 - loss: 1.4494 - val_categorical_accuracy: 0.5128 - val_loss: 1.2525
+Epoch 10/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.4657 - loss: 1.5527
+Epoch 10: val_loss did not improve from 1.25254
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 22ms/step - categorical_accuracy: 0.4662 - loss: 1.5529 - val_categorical_accuracy: 0.5385 - val_loss: 1.2958
+Epoch 11/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 18ms/step - categorical_accuracy: 0.5687 - loss: 1.3328
+Epoch 11: val_loss improved from 1.25254 to 1.12503, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 25ms/step - categorical_accuracy: 0.5684 - loss: 1.3298 - val_categorical_accuracy: 0.5897 - val_loss: 1.1250
+Epoch 12/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.5676 - loss: 1.2514
+Epoch 12: val_loss improved from 1.12503 to 1.06573, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.5648 - loss: 1.2564 - val_categorical_accuracy: 0.5385 - val_loss: 1.0657
+Epoch 13/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.6196 - loss: 1.0956
+Epoch 13: val_loss improved from 1.06573 to 0.95637, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 27ms/step - categorical_accuracy: 0.6179 - loss: 1.0976 - val_categorical_accuracy: 0.6154 - val_loss: 0.9564
+Epoch 14/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.5610 - loss: 1.1638
+Epoch 14: val_loss did not improve from 0.95637
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 20ms/step - categorical_accuracy: 0.5615 - loss: 1.1644 - val_categorical_accuracy: 0.4872 - val_loss: 1.2205
+Epoch 15/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.5376 - loss: 1.2618
+Epoch 15: val_loss did not improve from 0.95637
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 20ms/step - categorical_accuracy: 0.5379 - loss: 1.2599 - val_categorical_accuracy: 0.5128 - val_loss: 1.0319
+Epoch 16/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.6008 - loss: 1.1042
+Epoch 16: val_loss improved from 0.95637 to 0.82054, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 27ms/step - categorical_accuracy: 0.6005 - loss: 1.1070 - val_categorical_accuracy: 0.6923 - val_loss: 0.8205
+Epoch 17/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.5982 - loss: 1.0916
+Epoch 17: val_loss did not improve from 0.82054
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.6003 - loss: 1.0848 - val_categorical_accuracy: 0.6667 - val_loss: 0.8406
+Epoch 18/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.6193 - loss: 1.0056
+Epoch 18: val_loss did not improve from 0.82054
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 20ms/step - categorical_accuracy: 0.6192 - loss: 1.0068 - val_categorical_accuracy: 0.6410 - val_loss: 0.8341
+Epoch 19/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.6508 - loss: 0.9556
+Epoch 19: val_loss improved from 0.82054 to 0.80976, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 27ms/step - categorical_accuracy: 0.6527 - loss: 0.9511 - val_categorical_accuracy: 0.6410 - val_loss: 0.8098
+Epoch 20/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.6559 - loss: 0.9036
+Epoch 20: val_loss improved from 0.80976 to 0.70151, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.6565 - loss: 0.9007 - val_categorical_accuracy: 0.6410 - val_loss: 0.7015
+Epoch 21/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7131 - loss: 0.7538
+Epoch 21: val_loss did not improve from 0.70151
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7108 - loss: 0.7602 - val_categorical_accuracy: 0.6923 - val_loss: 0.7156
+Epoch 22/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.6950 - loss: 0.8058
+Epoch 22: val_loss improved from 0.70151 to 0.69700, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.6954 - loss: 0.8048 - val_categorical_accuracy: 0.6667 - val_loss: 0.6970
+Epoch 23/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.6875 - loss: 0.8578
+Epoch 23: val_loss did not improve from 0.69700
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.6871 - loss: 0.8586 - val_categorical_accuracy: 0.5128 - val_loss: 1.0764
+Epoch 24/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.6290 - loss: 0.9987
+Epoch 24: val_loss improved from 0.69700 to 0.66074, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 27ms/step - categorical_accuracy: 0.6293 - loss: 0.9993 - val_categorical_accuracy: 0.6667 - val_loss: 0.6607
+Epoch 25/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.6604 - loss: 0.8304
+Epoch 25: val_loss improved from 0.66074 to 0.60241, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.6616 - loss: 0.8279 - val_categorical_accuracy: 0.7436 - val_loss: 0.6024
+Epoch 26/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7157 - loss: 0.7101
+Epoch 26: val_loss did not improve from 0.60241
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 20ms/step - categorical_accuracy: 0.7166 - loss: 0.7113 - val_categorical_accuracy: 0.6667 - val_loss: 0.7402
+Epoch 27/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7334 - loss: 0.6580
+Epoch 27: val_loss improved from 0.60241 to 0.56609, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.7318 - loss: 0.6641 - val_categorical_accuracy: 0.6923 - val_loss: 0.5661
+Epoch 28/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7307 - loss: 0.6280
+Epoch 28: val_loss did not improve from 0.56609
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7294 - loss: 0.6353 - val_categorical_accuracy: 0.7179 - val_loss: 0.8092
+Epoch 29/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.6761 - loss: 0.8104
+Epoch 29: val_loss did not improve from 0.56609
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.6785 - loss: 0.8028 - val_categorical_accuracy: 0.6667 - val_loss: 0.7079
+Epoch 30/100
+23/24 ━━━━━━━━━━━━━━━━━━━━ 0s 23ms/step - categorical_accuracy: 0.7077 - loss: 0.7814
+Epoch 30: val_loss did not improve from 0.56609
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 25ms/step - categorical_accuracy: 0.7084 - loss: 0.7775 - val_categorical_accuracy: 0.6154 - val_loss: 0.8563
+Epoch 31/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.7646 - loss: 0.6104
+Epoch 31: val_loss improved from 0.56609 to 0.47237, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 27ms/step - categorical_accuracy: 0.7641 - loss: 0.6106 - val_categorical_accuracy: 0.7949 - val_loss: 0.4724
+Epoch 32/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.8239 - loss: 0.4955
+Epoch 32: val_loss did not improve from 0.47237
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.8203 - loss: 0.5011 - val_categorical_accuracy: 0.7179 - val_loss: 0.4930
+Epoch 33/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.7723 - loss: 0.5671
+Epoch 33: val_loss did not improve from 0.47237
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7748 - loss: 0.5642 - val_categorical_accuracy: 0.7179 - val_loss: 0.6562
+Epoch 34/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.7811 - loss: 0.5599
+Epoch 34: val_loss did not improve from 0.47237
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7797 - loss: 0.5630 - val_categorical_accuracy: 0.7692 - val_loss: 0.4736
+Epoch 35/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7756 - loss: 0.5629
+Epoch 35: val_loss did not improve from 0.47237
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7742 - loss: 0.5672 - val_categorical_accuracy: 0.7436 - val_loss: 0.4927
+Epoch 36/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7588 - loss: 0.5815
+Epoch 36: val_loss improved from 0.47237 to 0.39125, saving model to models/action_model.keras
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 26ms/step - categorical_accuracy: 0.7586 - loss: 0.5825 - val_categorical_accuracy: 0.8718 - val_loss: 0.3913
+Epoch 37/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7038 - loss: 0.7371
+Epoch 37: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7072 - loss: 0.7285 - val_categorical_accuracy: 0.7179 - val_loss: 0.6023
+Epoch 38/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7894 - loss: 0.5152
+Epoch 38: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7900 - loss: 0.5146 - val_categorical_accuracy: 0.7692 - val_loss: 0.4660
+Epoch 39/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.8162 - loss: 0.4163
+Epoch 39: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.8132 - loss: 0.4244 - val_categorical_accuracy: 0.7692 - val_loss: 0.5791
+Epoch 40/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.7582 - loss: 0.6882
+Epoch 40: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7559 - loss: 0.6897 - val_categorical_accuracy: 0.7436 - val_loss: 0.4553
+Epoch 41/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 20ms/step - categorical_accuracy: 0.8048 - loss: 0.5092
+Epoch 41: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.8029 - loss: 0.5137 - val_categorical_accuracy: 0.6923 - val_loss: 0.5444
+Epoch 42/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7961 - loss: 0.5391
+Epoch 42: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7959 - loss: 0.5379 - val_categorical_accuracy: 0.6923 - val_loss: 0.4424
+Epoch 43/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7001 - loss: 0.7675
+Epoch 43: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7058 - loss: 0.7547 - val_categorical_accuracy: 0.7179 - val_loss: 0.6220
+Epoch 44/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7728 - loss: 0.5190
+Epoch 44: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7705 - loss: 0.5221 - val_categorical_accuracy: 0.7436 - val_loss: 0.4959
+Epoch 45/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.8049 - loss: 0.5003
+Epoch 45: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 20ms/step - categorical_accuracy: 0.8056 - loss: 0.4957 - val_categorical_accuracy: 0.7179 - val_loss: 0.3917
+Epoch 46/100
+22/24 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - categorical_accuracy: 0.7914 - loss: 0.5163
+Epoch 46: val_loss did not improve from 0.39125
+24/24 ━━━━━━━━━━━━━━━━━━━━ 1s 21ms/step - categorical_accuracy: 0.7908 - loss: 0.5162 - val_categorical_accuracy: 0.8205 - val_loss: 0.3923
+Model trained and saved to models/action_model.keras
+Done!
