@@ -7,7 +7,7 @@
     ],
     "SEQUENCE_LENGTH": 30,
     "NO_SEQUENCES": 30,
-    "DATA_PATH": "../data/raw",
-    "X_TEST": "../data/processed/X_test.npy",
-    "Y_TEST": "../data/processed/y_test.npy"
+    "DATA_PATH": "data/raw",
+    "X_TEST": "data/processed/X_test.npy",
+    "Y_TEST": "data/processed/y_test.npy"
 }
