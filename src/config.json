@@ -1,6 +1,9 @@
 {
     "ACTIONS": [
-        "Nope"
+        "Nope",
+        "Hi",
+        "hearing",
+        "Again or Repeat"
     ],
     "SEQUENCE_LENGTH": 30,
     "NO_SEQUENCES": 30,
