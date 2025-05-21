@@ -7,7 +7,7 @@ from src import config
 import mediapipe as mp
 
 # Load model
-model = tf.keras.models.load_model('../models/action_model.keras')
+model = tf.keras.models.load_model('../models/action_model-refine.keras')
 
 # Load actions list from config
 ACTIONS = config.ACTIONS
@@ -27,7 +27,7 @@ with mp.solutions.holistic.Holistic(
     while cap.isOpened():
         ret, frame = cap.read()
         image, results = mediapipe_detection(frame, holistic)
-        draw_styled_landmarks(image, results)
+        # draw_styled_landmarks(image, results)
 
         keypoints = extract_keypoints(results)
         sequence.append(keypoints)
